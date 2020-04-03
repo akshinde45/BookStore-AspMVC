@@ -1,0 +1,122 @@
+﻿@model IEnumerable<FantasticBookStore.Models.Book>
+
+@{
+    // ViewBag.Title = "Index";
+    Layout = "~/Views/shared/_Layout.cshtml";
+
+
+
+}
+
+    <main>
+        <section class="banner-image">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Hurryy Up.....</h1>
+                    <p>Buy Your Favourite Books</p>
+                    <a href="~/Home/Login" class="btn btn-danger btn-lg active">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="padding-20"></div>
+                <div class="row">
+                    <div class="col-xs-4 text-center">
+                        <div class="thumbnail">
+                            <a href="~/Home/Index"><img src="~/images/oneback.jpg" alt="Watches"></a>
+                            <div class="caption">
+                                <h2>Fiction Books</h2>
+                                <p>Read Fiction Story.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <div class="thumbnail">
+                            <a href=""~/Home/Index"><img src="~/images/sachin.jpg" alt="Camera"></a>
+                            <div class="caption">
+                                <h2>Best Autobiographies</h2>
+                                <p>Choose among the Great people in the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <div class="thumbnail">
+                            <a href=""~/Home/Index"><img src="~/images/backraje.jpg" alt="Shirt"></a>
+                            <div class="caption">
+                                <h2>History</h2>
+                                <p>The best source for ancient and medieval Indian History.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-20"></div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    @*
+
+
+
+
+        <fieldset>
+
+            <legend></legend>
+            <div class="container" style="padding-top:5%">
+                <div id="gototop"> </div>
+
+
+                <h3>Click to buy this products </h3>
+                <div class="thumbnails">
+
+                    @foreach (var item in Model)
+                    {
+                        <form method="post">
+
+                            <div class="span3">
+                                <div class="thumbnail">
+
+
+                                    @Html.Raw("<img src=/" + "images" + "/" + item.bookId + ".jpg>")
+                                    <div class="caption cntr">
+                                        <p><b>Book:</b>@Html.DisplayFor(modelItem => item.bookName)</p>
+                                        <p><b>Price:</b>@Html.DisplayFor(modelItem => item.price)</p>
+                                        <p> <b>Author:</b>@Html.DisplayFor(modelItem => item.authorName)</p>
+                                        <input type="hidden" name="bid" value="@Html.DisplayFor(modelItem => item.bookId)" />
+                                        <input type="hidden" name="bname" value="@Html.DisplayFor(modelItem => item.bookName)" />
+                                        <input type="hidden" name="aname" value="@Html.DisplayFor(modelItem => item.authorName)" />
+                                        <input type="hidden" name="price" value="@Html.DisplayFor(modelItem => item.price)" />
+
+
+
+
+
+
+
+                                        <h4><input type="submit" value="Add to cart" class="shopBtn" title="add to cart"></h4>
+
+                                        <br class="clr">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                    }
+                </div>
+
+
+
+
+            </div> /container
+
+
+            <a href="#" class="gotop"><i class="icon-double-angle-up"></i></a>
+
+        </fieldset>*@

@@ -1,0 +1,71 @@
+﻿@model FantasticBookStore.Models.user
+@{
+    ViewBag.Title = "CreateUser";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <main>
+        <div class="container">
+            <div class="row row_style">
+                <div class="col-xs-5 col-lg-offset-2">
+                    <form>
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h2>Register</h2>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name" name="name">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="User Name" name="username">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="type" name="type">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" name="pass">
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Address" name="address">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="contact" class="form-control" placeholder="phone" name="phone">
+                            </div>
+                            <center> <button class="btn btn-primary">SIGN UP</button></center>
+                            <br>
+                         </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+
+
+
+}
+
+
