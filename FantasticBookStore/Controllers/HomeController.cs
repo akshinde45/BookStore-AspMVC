@@ -21,12 +21,10 @@ namespace FantasticBookStore.Controllers
             {
 
                 return View(BookDb.books.ToList());
-                // return View(data);
-                // ServiceReference.TestWcfClient client = null;
-                //return View(FantasticContext.Books.ToList());
-                // return View(client.GetuserTypeDetails());
+                
 
             }
+            
         }
 
 

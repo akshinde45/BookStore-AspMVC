@@ -24,10 +24,6 @@ namespace FantasticBookStore.Controllers.Tests
             Assert.IsNotNull(result);
         }
 
-        [TestMethod()]
-        public void CreateUserTest1()
-        {
-            Assert.Fail();
-        }
+       
     }
 }
